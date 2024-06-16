@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(7, 154, 252, 0.452);
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#view {
+    margin-top: 2rem;
+    visibility: hidden;
+}
+
+#mazeContainer {
+    top: 0.8rem;
+    opacity:0;
+    display: inline-block;
+    margin: auto;
+    border-radius: 0.6rem;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+}
+#mazeContainer #mazeCanvas {
+    margin: auto;
+    display: block;
+    border: solid 2px rgb(2, 2, 2);
+    height: 25rem;
+}
+
+input, select {
+    /*cursor: pointer;*/
+    background-color: rgba(5, 104, 252, 0.815);
+    height: 3.5rem;
+    width: 11rem;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    color:black;
+    display: inline-block;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    appearance:none;
+    margin-top: -1rem;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    
+    
+}
+
+input:hover, select:hover { 
+    background-color: rgba(251, 255, 5, 0.61);
+    color: white;
+    
+}
+input:active, select:active {
+    background-color: rgba(251, 255, 5, 0.61);
+    
+}
+
+
+
+.custom-select {
+	display:inline-block;
+
+}
+.custom-select select {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: 7.8rem center;
+}
+#Message-Container {
+    visibility: hidden;
+    /*color: rgb(255, 255, 255);*/
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+#Message-Container #message {
+    width: 20rem;
+    height: 20rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -9.375rem;
+    margin-top: -9.375rem;
+    font-size: 1.5rem;
+}
+h1{
+    font-variant-position: normal;
+    margin-left: -90px;
+}
+#page {
+	text-align: center;
+	height: auto;
+	width: auto;
+	margin: auto;
+}
+#page #menu {
+    margin: auto;
+    padding: 0.625rem;
+    height: 4rem;
+    box-sizing: border-box;
+}
+#page #menu h1 {
+    margin: 0;
+    margin-bottom: 0.625rem;
+    font-weight: 600;
+    font-size: 4rem;
+}
+#page #view {
+    position: absolute;
+    top: 4rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+.border {
+    border: 0.625rem black solid;
+    border-radius: 0.625rem;
+}
+
+#instructions {
+    margin-top :0rem; 
+    font-size: 2rem;
+    
+
+}
+
+[name="shuffle"] {
+      visibility: hidden;
+      margin-top: 27rem ;
+     
+}
+#okBtn{
+    margin-top: 1rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 25rem) {
+	input, select {
+	    width: 7.5rem;
+	}
+}
