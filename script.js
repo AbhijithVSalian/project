@@ -1,3 +1,7 @@
+const express = require('express');
+const serverless = require('serverless-http');
+const app=express();
+const router=express.Router();
 function rand(max) {
   return Math.floor(Math.random() * max);
 }
@@ -36,8 +40,6 @@ function toggleVisablity(id) {
     document.getElementById(id).style.visibility = "hidden";
     menu.style.visibility = "visible";
   } else {
-    bgmusic.play();
-    confetti();
     document.getElementById(id).style.visibility = "visible";
     document.getElementById('mazeContainer').style.visibility = "hidden";
     makeMaze();
@@ -543,3 +545,6 @@ document.addEventListener('DOMContentLoaded', function () {// Load the keyboard 
       }
   });
 });
+
+app.use('/.netlify/function/api',router);
+module.exports.handler = serverless(app);
